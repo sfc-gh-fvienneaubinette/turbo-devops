@@ -1,0 +1,42 @@
+manifest_version: 2
+
+type: DCM_PROJECT
+
+default_target: DEV
+
+targets:
+  DEV:
+    account_identifier: SFSENORTHAMERICA-FVIENNEAUBINETTE_AWS1
+    project_name: TURBO_DEVOPS_DB.UTILITIES.TURBO_DCM_PROJECT_DEV
+    project_owner: SYSADMIN
+    templating_config: DEV
+
+  STAGE:
+    account_identifier: SFSENORTHAMERICA-FVIENNEAUBINETTE_AWS1
+    project_name: TURBO_DEVOPS_DB.UTILITIES.TURBO_DCM_PROJECT_STG
+    project_owner: SYSADMIN
+    templating_config: STAGE
+
+  PROD:
+    account_identifier: SFSENORTHAMERICA-FVIENNEAUBINETTE_AWS1
+    project_name: TURBO_DEVOPS_DB.UTILITIES.TURBO_DCM_PROJECT_PROD
+    project_owner: SYSADMIN
+    templating_config: PROD
+
+templating:
+  defaults:
+    env_suffix: ""
+    wh_size: "SMALL"
+
+  configurations:
+    DEV:
+      env_suffix: "_DEV"
+      wh_size: "XSMALL"
+
+    STAGE:
+      env_suffix: "_STG"
+      wh_size: "SMALL"
+
+    PROD:
+      env_suffix: ""
+      wh_size: "SMALL"
