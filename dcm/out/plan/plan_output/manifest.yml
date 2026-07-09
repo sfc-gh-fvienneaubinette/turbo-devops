@@ -8,19 +8,19 @@ targets:
   DEV:
     account_identifier: SFSENORTHAMERICA-FVIENNEAUBINETTE_AWS1
     project_name: TURBO_DEVOPS_DB.UTILITIES.TURBO_DCM_PROJECT_DEV
-    project_owner: SYSADMIN
+    project_owner: DEV_DCM_DEVELOPER
     templating_config: DEV
 
   STAGE:
     account_identifier: SFSENORTHAMERICA-FVIENNEAUBINETTE_AWS1
     project_name: TURBO_DEVOPS_DB.UTILITIES.TURBO_DCM_PROJECT_STG
-    project_owner: SYSADMIN
+    project_owner: DEV_DCM_DEVELOPER
     templating_config: STAGE
 
   PROD:
     account_identifier: SFSENORTHAMERICA-FVIENNEAUBINETTE_AWS1
     project_name: TURBO_DEVOPS_DB.UTILITIES.TURBO_DCM_PROJECT_PROD
-    project_owner: SYSADMIN
+    project_owner: PROD_DCM_DEVELOPER
     templating_config: PROD
 
 templating:
